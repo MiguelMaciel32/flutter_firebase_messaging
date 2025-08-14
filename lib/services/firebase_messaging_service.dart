@@ -6,7 +6,8 @@ class FirebaseMessagingService {
   FirebaseMessagingService._internal();
 
   // Singleton instance
-  static final FirebaseMessagingService _instance = FirebaseMessagingService._internal();
+  static final FirebaseMessagingService _instance =
+      FirebaseMessagingService._internal();
 
   // Factory constructor to provide singleton instance
   factory FirebaseMessagingService.instance() => _instance;
@@ -15,7 +16,8 @@ class FirebaseMessagingService {
   LocalNotificationsService? _localNotificationsService;
 
   /// Initialize Firebase Messaging and sets up all message listeners
-  Future<void> init({required LocalNotificationsService localNotificationsService}) async {
+  Future<void> init(
+      {required LocalNotificationsService localNotificationsService}) async {
     // Init local notifications service
     _localNotificationsService = localNotificationsService;
 
@@ -76,8 +78,8 @@ class FirebaseMessagingService {
     final notificationData = message.notification;
     if (notificationData != null) {
       // Display a local notification using the service
-      _localNotificationsService?.showNotification(
-          notificationData.title, notificationData.body, message.data.toString());
+      _localNotificationsService?.showNotification(notificationData.title,
+          notificationData.body, message.data.toString());
     }
   }
 

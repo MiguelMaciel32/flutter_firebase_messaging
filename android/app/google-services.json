@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "32898812068",
+    "project_id": "casperypay",
+    "storage_bucket": "casperypay.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32898812068:android:3dd78346bba5ae1c9b3e31",
+        "android_client_info": {
+          "package_name": "com.samusko.firebase.messaging"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFHEMJnC_Wng0IdbUpkKCoyt88DPvUPis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
